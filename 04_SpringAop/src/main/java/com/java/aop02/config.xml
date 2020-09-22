@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+	<bean id="baby" class="com.java.aop02.Baby"/>
+	<bean id="mam" class="com.java.aop02.Mam"/>
+	<bean id="papa" class="com.java.aop02.Papa"/>
+	
+	<!--  공통코드 -->
+	<bean id="paspect" class="com.java.aop02.PASpect"/>
+	
+	<aop:config>
+		<aop:aspect id="exAspect" ref="paspect"><!-- 알려주는것 -->
+			<aop:pointcut expression="within(com.java.aop02.*)" id="publicM"/><!-- within을 통해서 경로 설정 -->
+			<aop:before method="awake" pointcut-ref="publicM"/>
+			<aop:after method="sleep" pointcut-ref="publicM"/>
+		</aop:aspect>
+	</aop:config>
+	
+	
+</beans>

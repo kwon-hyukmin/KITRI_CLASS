@@ -1,0 +1,42 @@
+package com.java.bank.ui;
+
+import com.java.bank.dao.BankDao;
+import com.java.bank.dto.BankDto;
+
+public class BankView implements BankUI {
+	
+	private BankDto bankDto;
+	private BankDao bankDao;
+	
+	
+	
+	
+	public BankView(BankDto bankDto, BankDao bankDao) {
+		this.bankDao = bankDao;
+		this.bankDto = bankDto;
+	}
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public BankDto getBankDto() {
+		return bankDto;
+	}
+
+	public void setBankDto(BankDto bankDto) {
+		this.bankDto = bankDto;
+	}
+
+	public BankDao getBankDao() {
+		return bankDao;
+	}
+
+	public void setBankDao(BankDao bankDao) {
+		this.bankDao = bankDao;
+	}
+
+	
+}

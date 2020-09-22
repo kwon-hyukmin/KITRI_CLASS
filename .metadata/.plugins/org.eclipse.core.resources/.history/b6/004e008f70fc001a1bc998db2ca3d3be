@@ -1,0 +1,8 @@
+package com.java.bank.ui;
+
+public class BankUI {
+
+	void execute() {
+		
+	}
+}
