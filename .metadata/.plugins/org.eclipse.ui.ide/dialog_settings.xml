@@ -13,6 +13,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\spring\04_SpringAop"/>
+			<item value="C:\spring\03_SpringDi"/>
 			<item value="C:\Users\KITRI\eclipse-workspace\15.jdbc"/>
 			<item value="C:\Users\KITRI\eclipse-workspace\16.swing"/>
 			<item value="C:\kitri_class\ImgBoard"/>
